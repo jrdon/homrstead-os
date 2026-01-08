@@ -11,10 +11,11 @@ export default function CommandCenterShell({ children }: { children: React.React
       <div className="flex flex-col flex-1">
         <TopBar />
 
-        <main className="p-6">
+        <main className="p-6 flex-1 overflow-auto">
           {children}
         </main>
       </div>
     </div>
   );
 }
+
