@@ -21,13 +21,14 @@ export default function DashboardPage() {
         </Card>
 
         {/* Full-width map module */}
-        <div className="col-span-1 md:grid-cols-2 lg:col-span-3 h-[80vh]">
-          <Map />
-
+        <div className="col-span-1 md:col-span-2 lg:col-span-3 h-[80vh]">
           {/* TEST BLOCK */}
           <div className="w-full h-full bg-red-500 text-white p-10 text-3xl">
             MAP TEST BLOCK
           </div>
+
+          {/* Map */}
+          <Map />
         </div>
       </div>
     </CommandCenterShell>
