@@ -2,7 +2,7 @@
 
 import CommandCenterShell from "@/components/layout/CommandCenterShell";
 import Card from "@/components/ui/Card";
-import Map from "../modules/map1/map"; // ← Add this
+import Map from "../modules/map1/map";
 
 export default function DashboardPage() {
   return (
@@ -21,7 +21,7 @@ export default function DashboardPage() {
         </Card>
 
         {/* Full-width map module */}
-        <div className="col-span-1 md:col-span-2 lg:col-span-3">
+        <div className="col-span-1 md:col-span-2 lg:col-span-3 h-[80vh]">
           <Map />
         </div>
       </div>
