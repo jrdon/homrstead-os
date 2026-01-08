@@ -2,6 +2,7 @@
 
 import CommandCenterShell from "@/components/layout/CommandCenterShell";
 import Card from "@/components/ui/Card";
+import Map from "../modules/map1/map"; // ← Add this
 
 export default function DashboardPage() {
   return (
@@ -18,6 +19,11 @@ export default function DashboardPage() {
         <Card title="Irrigation">
           <p>Irrigation module placeholder.</p>
         </Card>
+
+        {/* Full-width map module */}
+        <div className="col-span-1 md:col-span-2 lg:col-span-3">
+          <Map />
+        </div>
       </div>
     </CommandCenterShell>
   );
